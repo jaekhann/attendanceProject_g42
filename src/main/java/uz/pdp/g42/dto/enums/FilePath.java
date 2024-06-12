@@ -6,13 +6,13 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Getter
 public enum FilePath {
-    ATTENDANCE_ITEMS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/attendanceItems.json"),
-    ATTENDANCE_SHEETS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/attendanceSheets.json"),
-    GROUPS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/groups.json"),
-    MANAGERS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/managers.json"),
-    SCHOOLS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/schools.json"),
-    STUDENTS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/students.json"),
-    TEACHERS_PATH("/Users/jaxongir/Desktop/AttendanceProject/projectAttendance/json/teachers.json");
+    ATTENDANCE_ITEMS_PATH("json/attendanceItems.json"),
+    ATTENDANCE_SHEETS_PATH("json/attendanceSheets.json"),
+    GROUPS_PATH("json/groups.json"),
+    MANAGERS_PATH("json/managers.json"),
+    SCHOOLS_PATH("json/schools.json"),
+    STUDENTS_PATH("json/students.json"),
+    TEACHERS_PATH("json/teachers.json");
 
     private final String path;
 }
