@@ -39,3 +39,11 @@ c
 +src/main/java/uz/pdp/g42/model/Teacher.java,b/3/b33edeb867de270e8fe14a3cb9bc81ae3a6fc8e2
 Y
 )src/main/java/uz/pdp/g42/dto/BaseDto.java,e/d/eddc94e8a7ca3c2cce929e3a390f786d237eda3d
+a
+1src/main/java/uz/pdp/g42/service/BaseService.java,4/9/490f62a896677304dea62ab5df9f0e46e7d6226e
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+Å
+Q.idea/sonarlint/securityhotspotstore/4/9/490f62a896677304dea62ab5df9f0e46e7d6226e,d/6/d696111f6a89435a169c68762b524c6da299979d
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
