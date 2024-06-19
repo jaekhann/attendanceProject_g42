@@ -21,8 +21,7 @@ public class AttendanceSheetDto implements BaseDto<AttendanceSheet> {
 
     @Override
     public Optional<AttendanceSheet> getById(UUID id) throws IOException {
-        return fileService.getList(FilePath.ATTENDANCE_SHEETS_PATH.getPath(), AttendanceSheet[].class)
-                .stream().filter(attendanceSheet -> id.equals(attendanceSheet.getId())).findFirst();
+        return list().stream().filter(attendanceSheet -> id.equals(attendanceSheet.getId())).findFirst();
     }
 
     @Override

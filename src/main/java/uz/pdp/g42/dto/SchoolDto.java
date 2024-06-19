@@ -21,8 +21,7 @@ public class SchoolDto implements BaseDto<School> {
 
     @Override
     public Optional<School> getById(UUID id) throws IOException {
-        return fileService.getList(FilePath.SCHOOLS_PATH.getPath(), School[].class)
-                .stream().filter(school -> id.equals(school.getId())).findFirst();
+        return list().stream().filter(school -> id.equals(school.getId())).findFirst();
     }
 
     @Override

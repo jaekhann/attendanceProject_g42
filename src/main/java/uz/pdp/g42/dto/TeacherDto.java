@@ -21,8 +21,7 @@ public class TeacherDto implements BaseDto<Teacher> {
 
     @Override
     public Optional<Teacher> getById(UUID id) throws IOException {
-        return fileService.getList(FilePath.TEACHERS_PATH.getPath(), Teacher[].class)
-                .stream().filter(teacher -> id.equals(teacher.getId())).findFirst();
+        return list().stream().filter(teacher -> id.equals(teacher.getId())).findFirst();
     }
 
     @Override

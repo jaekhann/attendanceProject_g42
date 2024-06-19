@@ -12,6 +12,7 @@ public enum FilePath {
     MANAGERS_PATH("json/managers.json"),
     SCHOOLS_PATH("json/schools.json"),
     STUDENTS_PATH("json/students.json"),
+    SUBJECTS_PATH("json/subjects.json"),
     TEACHERS_PATH("json/teachers.json");
 
     private final String path;

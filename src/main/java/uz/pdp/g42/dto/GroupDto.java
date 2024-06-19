@@ -21,8 +21,7 @@ public class GroupDto implements BaseDto<Group> {
 
     @Override
     public Optional<Group> getById(UUID id) throws IOException {
-        return fileService.getList(FilePath.GROUPS_PATH.getPath(), Group[].class)
-                .stream().filter(group -> id.equals(group.getId())).findFirst();
+        return list().stream().filter(group -> id.equals(group.getId())).findFirst();
     }
 
     @Override

@@ -21,8 +21,7 @@ public class ManagerDto implements BaseDto<Manager> {
 
     @Override
     public Optional<Manager> getById(UUID id) throws IOException {
-        return fileService.getList(FilePath.MANAGERS_PATH.getPath(), Manager[].class)
-                .stream().filter(manager -> id.equals(manager.getId())).findFirst();
+        return list().stream().filter(manager -> id.equals(manager.getId())).findFirst();
     }
 
     @Override

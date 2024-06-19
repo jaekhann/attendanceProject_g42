@@ -19,9 +19,9 @@ public class AttendanceItemService implements BaseService<AttendanceItem> {
         }
 
         attendanceItemDto.create(attendanceItem);
-        // you can also return just 'true' value
+        // you can also return just entered value 'attendanceItem'
         return getById(attendanceItem.getId());
-        // return true;
+        // return attendanceItem;
     }
 
     @Override
