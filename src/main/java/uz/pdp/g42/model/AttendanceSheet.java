@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.UUID;
 
 @EqualsAndHashCode(callSuper = true)
@@ -14,7 +15,8 @@ import java.util.UUID;
 public class AttendanceSheet extends BaseModel {
     private UUID schoolId;
     private UUID groupId;
+    private UUID subjectId;
     private UUID teacherId;
     private String date;
-    private AttendanceItem[] studentsAttendance;
+    private List<AttendanceItem> studentsAttendance;
 }

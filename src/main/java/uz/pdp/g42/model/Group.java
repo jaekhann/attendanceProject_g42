@@ -9,11 +9,10 @@ import java.util.List;
 import java.util.UUID;
 
 @EqualsAndHashCode(callSuper = true)
-//@Data
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Group extends BaseModel {
     private String groupNumber;
-    private List<Subject> subjects;
     private UUID schoolId;
 }

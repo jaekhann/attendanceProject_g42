@@ -5,14 +5,14 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.UUID;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class AttendanceItem extends BaseModel {
-    private UUID studentId;
-    private boolean isAttended;
-//    private UUID attendanceSheetId;
+@NoArgsConstructor
+public class Schedule extends BaseModel {
+    private UUID groupId;
+    private List<Subject> subjects;
 }
