@@ -13,7 +13,9 @@ public class ManagerService implements BaseService<Manager> {
 
     @Override
     public Manager create(Manager manager) throws IOException {
-        if(manager.getUsername() == null || manager.getPassword() == null || manager.getName() == null) {
+        if(manager.getUsername() == null ||
+                manager.getPassword() == null ||
+                manager.getName() == null) {
             //throw new IOException("Username and password are required");
             return null;
         }

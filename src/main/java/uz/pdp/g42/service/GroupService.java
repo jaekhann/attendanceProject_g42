@@ -17,7 +17,9 @@ public class GroupService implements BaseService<Group> {
 
      @Override
     public Group create(Group group) throws IOException {
-         if (group.getId() != null ) {
+         if (group.getId() != null ||
+                 group.getGroupNumber() == null ||
+                 group.getSchoolId() == null) {
              //  throw new IOException("Group id already exists or null");
              return null;
          }

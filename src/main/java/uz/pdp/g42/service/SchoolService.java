@@ -15,7 +15,9 @@ public class SchoolService implements BaseService<School> {
 
     @Override
     public School create(School school) throws IOException {
-        if(school.getManagerId() == null || school.getName() == null || school.getSpecialization() == null){
+        if(school.getManagerId() == null ||
+                school.getName() == null ||
+                school.getSpecialization() == null){
             return null;
         }
         schoolDto.create(school);
