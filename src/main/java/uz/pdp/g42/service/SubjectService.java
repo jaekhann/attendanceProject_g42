@@ -14,7 +14,9 @@ public class SubjectService implements BaseService<Subject> {
 
     @Override
     public Subject create(Subject subject) throws IOException {
-        if (subject == null ||subject.getSchoolId() == null || subject.getName().isEmpty()) {
+        if (subject == null ||
+                subject.getSchoolId() == null ||
+                subject.getName().isEmpty()) {
             return null;
         }
 

@@ -13,7 +13,9 @@ public class AttendanceSheetService implements BaseService<AttendanceSheet> {
     private AttendanceSheetDto attendanceSheetDto;
     @Override
     public AttendanceSheet create(AttendanceSheet attendanceSheet) throws IOException {
-        if (attendanceSheet.getSchoolId() == null || attendanceSheet.getGroupId() == null || attendanceSheet.getTeacherId() == null) {
+        if (attendanceSheet.getSchoolId() == null ||
+                attendanceSheet.getGroupId() == null ||
+                attendanceSheet.getTeacherId() == null) {
             return null;
         }
 
